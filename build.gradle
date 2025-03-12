@@ -21,7 +21,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	//便利機能
-	implementation 'org.apache.commons:commons-lang3:3.14.0.redhat-00007'
+	implementation 'org.apache.commons:commons-lang3:3.14.0'
 
 
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
