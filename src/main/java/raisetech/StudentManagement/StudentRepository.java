@@ -8,8 +8,8 @@ import java.util.List;
 public interface StudentRepository {
 
     @Select("SELECT * FROM students")
-    List<Student> search();
+    List<Student> StudentListSearch();
 
     @Select("SELECT * FROM students_courses")
-    List<StudentCourses>search2();
+    List<StudentCourses>StudentCourseListSearch();
 }
