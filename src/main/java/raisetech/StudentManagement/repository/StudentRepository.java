@@ -1,6 +1,8 @@
-package raisetech.StudentManagement;
+package raisetech.StudentManagement.repository;
 
 import org.apache.ibatis.annotations.*;
+import raisetech.StudentManagement.data.Student;
+import raisetech.StudentManagement.data.StudentCourses;
 
 import java.util.List;
 
