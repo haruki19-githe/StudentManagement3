@@ -19,23 +19,15 @@ public class StudentManagementApplication {
         SpringApplication.run(StudentManagementApplication.class, args);
     }
 
-    @GetMapping("/student")
-    public List<Student> getStudent() {
-        return repository.searchByName();
+    @GetMapping("/studentList")
+    public List<Student> getStudentList() {
+        return repository.StudentListSearch();
     }
 
-    @PostMapping("/student")
-    public void registerStudent(String name, int age) {
-        repository.registerStudent(name, age);
+    @GetMapping("/studentCourseList")
+    public List<StudentCourses> getStudentCourseList() {
+        return repository.StudentCourseListSearch();
     }
 
-    @PatchMapping("/student")
-    public void updateStudent(String name, int age) {
-        repository.updateStudent(name, age);
-    }
 
-    @DeleteMapping("/student")
-    public void deleteStudent(String name) {
-        repository.deleteStudent(name);
-    }
 }
